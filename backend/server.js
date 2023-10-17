@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+const connexion = require('./connexion');
+
 // Code felix
 app.get('/evenements', (req, res) => {
     res.send('Liste des evenements');
